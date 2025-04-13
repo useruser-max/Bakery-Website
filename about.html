@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        Student Name: simra hanif
+        Student ID: 040
+        Page: About Us
+        Description: About page for The Hidden Cup Bakery website
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hidden Cup Bakery - About Us</title>
+    
+    <!-- CSS Styles -->
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff9fa;
+            color: #5a3d2b;
+            line-height: 1.6;
+        }
+        
+        /* Header Styles */
+        header {
+            background: #ffd1dc;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+        
+        .logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #ffb6c1;
+        }
+        
+        h1 {
+            color: #d35d6e;
+            margin: 1rem 0 0.5rem;
+            font-size: 2.2rem;
+        }
+        
+        /* Navigation Styles */
+        nav {
+            background: #ffe4e1;
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: #d35d6e;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #a04553;
+        }
+        
+        /* About Content Styles */
+        .about-container {
+            background: #fff0f5;
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+            border-radius: 8px;
+        }
+        
+        h2 {
+            color: #d35d6e;
+            border-bottom: 2px solid #ffb6c1;
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+        
+        /* About Section Styles */
+        section {
+            margin-bottom: 2rem;
+        }
+        
+        .bakery-photo {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin: 1rem 0;
+            border: 2px solid #ffb6c1;
+        }
+        
+        .team-member {
+            display: flex;
+            align-items: center;
+            margin: 1rem 0;
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+        
+        .team-photo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #ffb6c1;
+            margin-right: 1rem;
+        }
+        
+        ul {
+            padding-left: 1.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Footer Styles */
+        footer {
+            background: #d35d6e;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 0.5rem 0;
+            }
+            
+            .about-container {
+                padding: 1rem;
+                margin: 1rem;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .team-member {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .team-photo {
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Website Header -->
+    <header>
+        <img src="C:\Users\Administrator\Desktop\web a2\images\bakerylogo.jpg" alt="The Hidden Cup Bakery Logo" class="logo">
+        <h1>The Hidden Cup Bakery</h1>
+        <p>Baking with love since 2010</p>
+    </header>
+    
+    <!-- Main Navigation -->
+    <nav>
+        <a href="C:\Users\Administrator\Desktop\web a2\images\index.html">Home</a>
+        <a href="C:\Users\Administrator\Desktop\web a2\images\menue.html">Menu</a>
+        <a href="C:\Users\Administrator\Desktop\web a2\images\about.html">About us</a>
+        <a href="C:\Users\Administrator\Desktop\web a2\images\order.html">Order</a>
+        <a href="C:\Users\Administrator\Desktop\web a2\images\customcake.html">customcake</a>
+    </nav>
+    
+    <!-- About Content Area -->
+    <main class="about-container">
+        <h1>About Our Bakery</h1>
+        
+        <section>
+            <h2>Our Story</h2>
+            <img src="c:\Users\Administrator\Desktop\web a2\images\cake.jpg" alt="Our Bakery" class="bakery-photo">
+            <p>Founded in 2010 by pastry chef Maria Rodriguez, The Hidden Cup Bakery began as a small home-based business with just one oven and a dream. What started as a passion for creating delicious treats for friends and family quickly grew into the beloved neighborhood bakery we are today.</p>
+            <p>We pride ourselves on using only the finest ingredients, sourced locally whenever possible. Every item in our bakery is made from scratch daily, using traditional recipes with a modern twist.</p>
+        </section>
+        
+        <section>
+            <h2>Our Philosophy</h2>
+            <p>At The Hidden Cup, we believe that baking is an art form that should engage all the senses. Our philosophy is simple:</p>
+            <ul>
+                <li>Quality ingredients make quality baked goods</li>
+                <li>Every customer should feel like family</li>
+                <li>Traditional methods with innovative flavors</li>
+                <li>Freshness is non-negotiable</li>
+                <li>Sweet memories are made here</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Meet Our Team</h2>
+            
+            <article class="team-member">
+                <img src="C:\Users\Administrator\Desktop\web a2\images\chef1.jpg" alt="Maria Rodriguez" class="team-photo">
+                <div>
+                    <h3>Maria Rodriguez</h3>
+                    <p><strong>Founder & Head Pastry Chef</strong></p>
+                    <p>With over 20 years of baking experience, Maria brings creativity to every recipe. Trained in Paris, she combines European techniques with local flavors.</p>
+                </div>
+            </article>
+            
+            <article class="team-member">
+                <img src="C:\Users\Administrator\Desktop\web a2\images\james.jpg" alt="James Wilson" class="team-photo">
+                <div>
+                    <h3>James Wilson</h3>
+                    <p><strong>Head Baker</strong></p>
+                    <p>James specializes in breads and has won several awards for his talent. He believes the secret to great bread is patience and quality ingredients.</p>
+                </div>
+            </article>
+            
+            <article class="team-member">
+                <img src="c:\Users\Administrator\Desktop\web a2\images\sara.jpg" alt="Sarah Chen" class="team-photo">
+                <div>
+                    <h3>Sarah Chen</h3>
+                    <p><strong>Shop Manager</strong></p>
+                    <p>Sarah ensures every customer leaves with a smile. With her background in hospitality, she makes our bakery feel like home.</p>
+                </div>
+            </article>
+        </section>
+        
+        <section>
+            <h2>Visit Us</h2>
+            <p>We're located in the heart of the city at:</p>
+            <p><strong>123 Baker Street<br>
+            Open daily 7:00 AM - 7:00 PM</strong></p>
+            <p>Come smell the fresh bread, taste our pastries, and experience the warmth of The Hidden Cup Bakery!</p>
+        </section>
+    </main>
+    
+    <!-- Website Footer -->
+    <footer>
+        <p>© 2023 The Hidden Cup Bakery | (123) 456-7890 | hello@hiddencup.com</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        Student Name: simra hanif
+        Student ID: 040
+        Page: Order
+        Description: Order page for The Hidden Cup Bakery website
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hidden Cup Bakery - Order</title>
+
+    <!-- CSS Styles -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff9fa;
+            color: #5a3d2b;
+        }
+
+        header {
+            background: #ffd1dc;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        .logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #ffb6c1;
+        }
+
+        h1 {
+            color: #d35d6e;
+            margin: 1rem 0 0.5rem;
+            font-size: 2.2rem;
+        }
+
+        nav {
+            background: #ffe4e1;
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: #d35d6e;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #a04553;
+        }
+
+        .content {
+            max-width: 600px;
+            margin: 2rem auto;
+            background: #fff0f5;
+            padding: 2rem;
+            border-radius: 8px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #d35d6e;
+            margin-bottom: 1rem;
+        }
+
+        label {
+            display: block;
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #d35d6e;
+            color: white;
+            padding: 10px 20px;
+            margin-top: 1.5rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #a04553;
+        }
+
+        footer {
+            background: #d35d6e;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 0.5rem 0;
+            }
+
+            .content {
+                margin: 1rem;
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Website Header -->
+    <header>
+        <img src="C:\Users\Administrator\Desktop\web a2\images\bakerylogo.jpg" alt="The Hidden Cup Bakery Logo" class="logo">
+        <h1>The Hidden Cup Bakery</h1>
+        <p>Freshly baked delights since 2010</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="C:\Users\Administrator\Desktop\web a2\images\index.html">Home</a>
+        <a href="C:\Users\Administrator\Desktop\web a2\images\menue.html">Menu</a>
+        <a href="C:\Users\Administrator\Desktop\web a2\images\about.html">About Us</a>
+        <a href="C:\Users\Administrator\Desktop\web a2\images\order.html">Order Online</a>
+        <a href="C:\Users\Administrator\Desktop\web a2\images\customcake.html">customize cake</a>
+    </nav>
+
+    <!-- Order Form -->
+    <main class="content">
+        <h2>Order Online</h2>
+        <form action="#">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="item">Select Item:</label>
+            <select id="item" name="item" required>
+                <option value="">--Choose an item--</option>
+                <option value="cake">Cake</option>
+                <option value="croissant">Croissant</option>
+                <option value="tart">Fruit Tart</option>
+                <option value="pastries">Assorted Pastries</option>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+
+            <label for="address">Delivery Address:</label>
+            <textarea id="address" name="address" rows="3" required></textarea>
+
+            <button type="submit">Submit Order</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>2023 The Hidden Cup Bakery | 123 Baker Street, Karachi | (021) 123-4567</p>
+        <p>Open daily 7am-7pm | Follow us on <a href="#" style="color: white;">Instagram</a> and <a href="#" style="color: white;">Facebook</a></p>
+    </footer>
+</body>
+</html>
