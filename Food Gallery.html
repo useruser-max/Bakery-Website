@@ -1,0 +1,181 @@
+<!-- 
+   Name: Kinza Kaleem
+   ID: 22008105039
+ -->
+ 
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Food Gallery - Local Bakery</title>
+   <style>
+     body {
+       font-family: 'Arial', sans-serif;
+       margin: 0;
+       padding: 0;
+       background-color: #fffaf9;
+       color: #5e5e5e;
+     }
+ 
+     header, footer {
+       background-color: #fcd5ce;
+       color: #5e5e5e;
+       text-align: center;
+       padding: 15px;
+     }
+ 
+     nav {
+       background-color: #fae1dd;
+       text-align: center;
+       padding: 10px;
+     }
+ 
+     nav a {
+       margin: 0 15px;
+       text-decoration: none;
+       color: #d291bc;
+       font-weight: bold;
+     }
+ 
+     section {
+       display: grid;
+       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+       gap: 15px;
+       padding: 20px;
+       max-width: 1200px;
+       margin: auto;
+     }
+ 
+     figure {
+       background-color: #ffffff;
+       border: 1px solid #ffe5ec;
+       border-radius: 10px;
+       overflow: hidden;
+       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+       margin: 0;
+       transition: transform 0.3s ease;
+     }
+ 
+     figure img {
+       width: 100%;
+       height: 200px;         /* fixed height for uniform boxes */
+       object-fit: cover;     /* fills the box without distortion */
+       display: block;
+     }
+ 
+     figure:hover {
+       transform: scale(1.03);
+     }
+ 
+     /* Media Query for Mobile and Tablets (768px and below) */
+     @media (max-width: 768px) {
+       body {
+         font-size: 1em;
+         padding: 10px;
+       }
+ 
+       header h1 {
+         font-size: 1.5em;
+       }
+ 
+       nav a {
+         display: block;
+         margin-bottom: 10px;
+         text-align: center;
+         padding: 12px;
+       }
+ 
+       footer {
+         font-size: 0.7em;
+         padding: 8px;
+       }
+ 
+       h1 {
+         font-size: 1.2em;
+         text-align: center;
+       }
+     }
+ 
+     /* Small Screens (600px and below) */
+     @media (max-width: 600px) {
+       body {
+         font-size: 0.9em;
+       }
+ 
+       header h1 {
+         font-size: 1.1em;
+       }
+ 
+       section {
+         padding: 5px;
+       }
+ 
+       nav a {
+         font-size: 0.9em;
+         padding: 10px;
+       }
+ 
+       footer {
+         font-size: 0.6em;
+       }
+ 
+       h1 {
+         font-size: 1.3em;
+       }
+     }
+   </style>
+ </head>
+ <body>
+ 
+   <header>
+     <h1>Food Gallery</h1>
+     <p>Explore our delicious offerings!</p>
+   </header>
+ 
+   <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About us</a>
+    <a href="order.html">Order</a>
+    <a href="customcake.html">Custom Cake</a>
+     <a href="Food Gallery.html">Food Gallery</a>
+     <a href="booking info.html">Booking</a>
+     <a href="Reviews.html">Reviews</a>   
+     <a href="FAQ.html">FAQ</a>
+     <a href="Contact info.html">Contact Us</a>
+   </nav>
+ 
+   <section>
+     <figure>
+         <img src="images/pastry.jpeg" alt="Pastry">
+     </figure>
+     <figure>
+         <img src="images/cakes.jpg" alt="Cake">
+     </figure>
+     <figure>
+         <img src="images/cookies.jpeg" alt="Cookies">
+     </figure>
+     <figure>
+         <img src="images/bread.jpg" alt="Bread">
+     </figure>
+     <figure>
+         <img src="images/donuts.jpeg" alt="Donuts">
+     </figure>
+     <figure>
+         <img src="images/cupcake.jpg" alt="Cupcakes">
+     </figure>
+     <figure>
+         <img src="images/brownies.jpg" alt="Brownies">
+     </figure>
+     <figure>
+         <img src="images/macrons.jpg" alt="Macarons">
+     </figure>
+   </section>
+ 
+   <footer>
+     <p>&copy; 2023 Local Bakery. All rights reserved.</p>
+   </footer>
+ 
+ </body>
+ </html>

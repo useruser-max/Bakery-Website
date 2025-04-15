@@ -1,0 +1,236 @@
+<!-- 
+  Name: Kinza Kaleem
+  ID: 22008105039
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bakery Event Booking</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fffaf9;
+      margin: 0;
+      padding: 0;
+      color: #5e5e5e;
+    }
+
+    header, footer {
+      background-color: #fcd5ce;
+      color: #5e5e5e;
+      text-align: center;
+      padding: 15px;
+    }
+
+    nav {
+      background-color: #fae1dd;
+      text-align: center;
+      padding: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #d291bc;
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 10px;
+    }
+
+    section {
+      background-color: white;
+      border: 1px solid #ffe5ec;
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: #d291bc;
+    }
+
+    article h3 {
+      margin: 10px 0 5px;
+      color: #ffc8dd;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #fcd5ce;
+      color: #5e5e5e;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #ffc8dd;
+    }
+
+    /* Media Query for Mobile and Tablets (768px and below) */
+    @media (max-width: 768px) {
+      body {
+        font-size: 1em;
+        padding: 10px;
+      }
+
+      header h1 {
+        font-size: 1.2em;
+      }
+
+      main {
+        padding: 0 10px;
+      }
+
+      nav a {
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
+        padding: 12px;
+      }
+
+      h1 {
+        font-size: 1.5em;
+        text-align: center;
+      }
+
+      footer {
+        font-size: 0.7em;
+        padding: 8px;
+      }
+
+      .contact-form input, .contact-form textarea {
+        width: 100%;
+      }
+
+      .faq-item {
+        padding: 10px;
+        font-size: 1em;
+      }
+
+      .info-item {
+        margin-bottom: 15px;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    /* Small Screens (600px and below) */
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+      }
+
+      header h1 {
+        font-size: 1.1em;
+      }
+
+      main {
+        padding: 0 5px;
+      }
+
+      nav a {
+        font-size: 0.9em;
+        padding: 10px;
+      }
+
+      footer {
+        font-size: 0.6em;
+      }
+
+      h1 {
+        font-size: 1.3em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Local Bakery Events</h1>
+    <p>Book your place for fun events!</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About us</a>
+    <a href="order.html">Order</a>
+    <a href="customcake.html">Custom Cake</a>
+    <a href="Food Gallery.html">Food Gallery</a>
+    <a href="booking info.html">Booking</a>
+    <a href="Reviews.html">Reviews</a>   
+    <a href="FAQ.html">FAQ</a>
+    <a href="Contact info.html">Contact Us</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Upcoming Events</h2>
+      <article>
+        <h3>Baking Workshop</h3>
+        <p>Date: March 15, 2023 — 2:00 PM to 5:00 PM</p>
+        <p>Learn to bake delicious pastries with us!</p>
+      </article>
+      <article>
+        <h3>Cookie Decorating Contest</h3>
+        <p>Date: March 22, 2023 — 1:00 PM to 4:00 PM</p>
+        <p>Decorate cookies and win sweet prizes!</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Book Now</h2>
+      <form>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="event">Choose Event:</label>
+        <select id="event" name="event" required>
+          <option value="">-- Select Event --</option>
+          <option value="workshop">Baking Workshop</option>
+          <option value="contest">Cookie Contest</option>
+        </select>
+
+        <label for="guests">Guests:</label>
+        <input type="number" id="guests" name="guests" min="1" max="10" required>
+
+        <button type="submit">Submit Booking</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2023 Local Bakery
+  </footer>
+
+</body>
+</html>
