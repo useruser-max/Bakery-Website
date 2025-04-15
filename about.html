@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        Student Name: Simra Hanif
+        Student ID: 040
+        Page: About Us
+        Description: About The Hidden Cup Bakery
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - The Hidden Cup Bakery</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #5a3d2b;
+            background-image: url('images\\bakerywall.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 249, 250, 0.85);
+            z-index: -1;
+        }
+
+        header {
+            background: rgba(255, 209, 220, 0.9);
+            text-align: center;
+            padding: 2rem 1rem;
+            backdrop-filter: blur(5px);
+        }
+
+        .logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #ffb6c1;
+        }
+
+        h1 {
+            color: #d35d6e;
+            margin: 1rem 0 0.5rem;
+        }
+
+        nav {
+            background: rgba(255, 228, 225, 0.9);
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(5px);
+        }
+
+        nav a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: #d35d6e;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #a04553;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 2rem auto;
+            background: rgba(255, 240, 245, 0.9);
+            padding: 2rem;
+            border-radius: 8px;
+            backdrop-filter: blur(3px);
+        }
+
+        h2 {
+            color: #d35d6e;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            line-height: 1.8;
+            margin: 1rem 0;
+        }
+
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .member {
+            flex: 1 1 250px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 1rem;
+            border-radius: 6px;
+            text-align: center;
+        }
+
+        .member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #ffb6c1;
+        }
+
+        footer {
+            background: rgba(211, 93, 110, 0.9);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            backdrop-filter: blur(5px);
+        }
+
+        @media (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 0.5rem 0;
+            }
+
+            .team {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <img src="images/bakerylogo.jpg" alt="The Hidden Cup Bakery Logo" class="logo">
+        <h1>The Hidden Cup Bakery</h1>
+        <p>Baking with heart since 2010</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About us</a>
+        <a href="order.html">Order</a>
+        <a href="customcake.html">Custom Cake</a>
+        <a href="Food Gallery.html">Food Gallery</a>
+        <a href="booking info.html">Booking</a>
+        <a href="Reviews.html">Reviews</a>
+        <a href="FAQ.html">FAQ</a>
+        <a href="Contact info.html">Contact Us</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <h2>Our Story</h2>
+        <p>Welcome to The Hidden Cup Bakery – your cozy corner for homemade happiness. Founded in 2010 in the heart of Karachi, our bakery started as a dream to bring people together through the warmth of freshly baked treats.</p>
+        <p>From buttery croissants to decadent cakes and colorful tarts, every item is made with love, tradition, and a little touch of magic. Our team works every day to ensure that your experience is as delightful as the aroma that greets you when you walk in.</p>
+        <p>We believe that good food brings good memories – and we’re here to help you make some sweet ones!</p>
+
+        <h2>Meet Our Team</h2>
+        <div class="team">
+            <div class="member">
+                <img src="images/james.jpg" alt="Founder">
+                <h3>Sarah Hanif</h3>
+                <p>Founder & Head Baker</p>
+            </div>
+            <div class="member">
+                <img src="images/[PRO_CHEF] assortment of pastries.jpg" alt="Pastry Chef">
+                <h3>Ahmed Khan</h3>
+                <p>Pastry Chef</p>
+            </div>
+            <div class="member">
+                <img src="images/sara.jpg" alt="Manager">
+                <h3>Aliya Noor</h3>
+                <p>Customer Experience Manager</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2023 The Hidden Cup Bakery | 123 Baker Street, Karachi | (021) 123-4567</p>
+        <p>Open daily 7am-7pm | Follow us on <a href="#">Instagram</a> and <a href="#">Facebook</a></p>
+    </footer>
+
+</body>
+</html>
